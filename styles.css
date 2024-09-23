@@ -12,10 +12,16 @@ h1 {
     font-size: 50px;
 }
 
+h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
 h4 {
     text-align: center;
     font-weight: normal;
 }
+
 
 button {
     border: none;
