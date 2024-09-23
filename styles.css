@@ -1,5 +1,7 @@
 body {
     font-family: Manrope;
     background-color: lightblue;
-    align: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-right: 400px;
 }
