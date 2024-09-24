@@ -158,10 +158,15 @@ span.psw {
 <button type="button" onclick="redirect()" align="center">Weiter</button>
     </center>
 <script>
-function redirect()
-{
-    var url=document.getElementById('test').value
-    window.location = url+".html"
+function checkInput() {
+  var inputValue = document.getElementById('test').value;
+
+  if (inputValue === "30768") {
+    window.location.href = '30768.html';
+  } else {
+    alert("Falsch, versuche es noch einmal!");
+    document.getElementById('test').focus();
+  }
 }
 </script>
 
