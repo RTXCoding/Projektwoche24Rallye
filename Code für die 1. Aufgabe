@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <title>Interaktive Brecht-Schul-Rallye</title>
+        <link rel="stylesheet" href="styles.css">
+         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <script src="scripts.js"></script>
+<body>
+  <h1>herzlichen Glückwunsch!</h1>
+  <h2> du hast den QR-Code für die 1. Aufgabe gefunden!</h2>
+  <p>trage den Code:4862</p>
+  <p>auf der Website ein.</p>
+</body>
+</html> 
