@@ -149,17 +149,27 @@ span.psw {
  <img src="altbautoilette.jpg" align="center" width="500" height="600">  
         </center>  
 
-    <center>
-<input id="test"; type="text"; align="center"; autofocus>
-<button type="button" onclick="redirect()" align="center">Weiter</button>
-    </center>
+<center>
+  <input id="test" type="text" align="center" autofocus>
+  <button type="button" onclick="checkInput()" align="center">Weiter</button>
+</center>
+
 <script>
-{
- if(document.getElementById('test').value == "30768")  {
-   alert("Bitte Ihren Namen eingeben!");
-   document.Formular.User.focus();
-   return false;
+function checkInput() {
+  // Get the value from the input field
+  var inputValue = document.getElementById('test').value;
+
+  // Check if the input value is "30768"
+  if (inputValue === "30768") {
+    // Show alert and refocus on the input field
+    alert("Bitte Ihren Namen eingeben!");
+    document.getElementById('test').focus();
+    return false;
   }
+
+  // You can add redirect logic here if needed
+  // window.location.href = 'some_other_page.html';
+}
 </script>
 
 </body> 
