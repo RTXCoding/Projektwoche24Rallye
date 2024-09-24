@@ -154,11 +154,12 @@ span.psw {
 <button type="button" onclick="redirect()" align="center">Weiter</button>
     </center>
 <script>
-function redirect()
 {
-    var url=document.getElementById('test').value
-    window.location = url+".html"
-}
+ if(document.getElementById('test').value == "30768")  {
+   alert("Bitte Ihren Namen eingeben!");
+   document.Formular.User.focus();
+   return false;
+  }
 </script>
 
 </body> 
