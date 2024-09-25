@@ -63,6 +63,7 @@ img {
   <h1>Nächste Aufgabe!</h1> 
   <p>Finde die Tür zum Kriechkeller.</p>
   <p>Gebe die Raumnummer des Kriechkellers in das Antwortfeld ein!</p>
+  <p>(ohne Leerzeichen)</p>
 </div>
     <p></p>
        <center>
@@ -77,8 +78,8 @@ img {
 function checkInput() {
   var inputValue = document.getElementById('test').value;
 
-  if (inputValue === "30768") {
-    window.location.href = '30768.html';
+  if (inputValue === "A-1-01") {
+    window.location.href = 'index.html';
   } else {
     alert("Falsch, versuche es noch einmal!");
     document.getElementById('test').focus();
