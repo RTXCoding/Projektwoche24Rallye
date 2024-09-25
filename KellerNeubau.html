@@ -70,15 +70,21 @@ img {
  <img src="kellerAI.jpg" align="center" width="500" height="600">  
         </center>  
 
-    <center>
-<input id="test"; type="text"; align="center"; autofocus>
-<button type="button" onclick="redirect()" align="center">Weiter</button>
-    </center>
+<center>
+  <input id="test" type="text" align="center" autofocus>
+  <button type="button" onclick="checkInput()" align="center">Weiter</button>
+</center>
+
 <script>
-function redirect()
-{
-    var url=document.getElementById('test').value
-    window.location = url+".html"
+function checkInput() {
+  var inputValue = document.getElementById('test').value;
+
+  if (inputValue === "A-1-01") {
+    window.location.href = 'KellerNeubau.html';
+  } else {
+    alert("Falsch, versuche es noch einmal!");
+    document.getElementById('test').focus();
+  }
 }
 </script>
 
