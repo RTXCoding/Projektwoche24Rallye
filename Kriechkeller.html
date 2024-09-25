@@ -70,16 +70,17 @@ img {
  <img src="KRIECHKELLER.jpg" align="center" width="500" height="600">  
         </center>  
 
-    <center>
-<input id="test"; type="text"; align="center"; autofocus>
-<button type="button" onclick="redirect()" align="center">Weiter</button>
-    </center>
+<center>
+  <input id="test" type="text" align="center" autofocus>
+  <button type="button" onclick="checkInput()" align="center">Weiter</button>
+</center>
+
 <script>
 function checkInput() {
   var inputValue = document.getElementById('test').value;
 
-  if (inputValue === "A101") {
-    window.location.href = 'KellerNeubau.html';
+  if (inputValue === "30768") {
+    window.location.href = 'Kriechkeller.html';
   } else {
     alert("Falsch, versuche es noch einmal!");
     document.getElementById('test').focus();
