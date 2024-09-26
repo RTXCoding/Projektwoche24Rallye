@@ -23,9 +23,21 @@
         <div>
          <label for="name">Name</label>
             <input type="text" id="name" name="name"><br>
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" onclick="checkInput()">
         </div>
         </center>
+        <script>
+                    function checkInput() {
+          var inputValue = document.getElementById('test').value;
+        
+          if (inputValue === "Brandschutztür") {
+            window.location.href = 'RallyeEnde.html';
+          } else {
+            alert("Falsch, versuche es noch einmal!");
+            document.getElementById('test').focus();
+          }
+        }
+        </script>
         <button onclick="showGames()">Klicke für ein Spiel!</button>
         <div id="games">
             <iframe src="https://www.onlinegames.io/games/2022/unity/edys-car-simulator/index.html" align="center" width="100%" height="400" name=„iFrame“ title=""></iframe>
