@@ -16,12 +16,22 @@
             }
         </style>
         <center>
-            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                <input type="hidden" name="hosted_button_id" value="JSC6QQCXL9RXL" />
-                <input type="image" src="https://pics.paypal.com/00/s/OWUxZmI4YjEtYmU1NS00MzM0LWE2YTUtMjhmZjZkZjk0NTFk/file.JPG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
-            </form>
-
+            <div id="donate-button-container">
+<div id="donate-button"></div>
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script>
+PayPal.Donation.Button({
+env:'production',
+hosted_button_id:'8MCJ9PVZ3RWFA',
+image: {
+src:'https://pics.paypal.com/00/s/MDdlZTVlZjMtOTMzNC00Nzg2LWE0NDItM2E2MzM2OGFiZDM4/file.JPG',
+alt:'Donate with PayPal button',
+title:'PayPal - The safer, easier way to pay online!',
+}
+}).render('#donate-button');
+</script>
+</div>
+        </center>
         <script src="https://static.elfsight.com/platform/platform.js" async></script>
         <div class="elfsight-app-b7ff1491-f11d-4814-8bed-7d9b594fd562" data-elfsight-app-lazy></div>
         </center>
