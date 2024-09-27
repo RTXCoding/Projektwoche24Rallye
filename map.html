@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+      <link href="styles.css" rel="stylesheet">
+      <link rel="icon" href="https://raw.githubusercontent.com/RTXCoding/Projektwoche24Rallye/refs/heads/main/bsh_logo.png" type="image/x-icon"/>
+       <style>
+           h1, h2, h3, p {
+ text-align: center;
+}
+       </style>
+       <style>
+body {
+    font-family: Manrope; 
+    align-items: center;
+    background-color: #cccccc;
+}
 
+           
+input[type=text], input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  align-content: center;
+}
+
+
+button {
+  background-color: #0050DD;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+   
+img {
+    align-content: center;       
+}
+
+           
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+   </head>
+<body>
+
+<div class="content">
+  <h1>Richtig, nächste Aufgabe!</h1> 
+  <p>Welche Art von Tür ist die Tür des Hausanschlussraums?</p>
+  <p>Finde den raum!</p>
+</div>
+    <p></p>
+       <center>
+ <img src="map.jpg" align="center" width="500" height="600">  
+        </center>  
+
+<center>
+  <input id="test" type="text" align="center" autofocus>
+  <button type="button" onclick="checkInput()" align="center">Weiter</button>
+</center>
+
+<script>
+function checkInput() {
+  var inputValue = document.getElementById('test').value;
+
+  if (inputValue === "Brandschutztür") {
+    window.location.href = 'gemaelde.html';
+  } else {
+    alert("Falsch, versuche es noch einmal!");
+    document.getElementById('test').focus();
+  }
+}
+</script>
+
+</body> 
