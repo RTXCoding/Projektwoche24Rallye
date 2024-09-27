@@ -80,7 +80,27 @@ img {
   <span class="close-btn" onclick="hidePopup()">×</span>
   <div class="popup-content" id="popup-content"></div>
 </div>
+<script>
+function showPopup(event, text) {
+  var popup = document.getElementById('popup');
+  var popupContent = document.getElementById('popup-content');
+  
+  popupContent.textContent = text;
+  
+  var x = event.pageX;
+  var y = event.pageY;
+  
+  popup.style.left = x + 'px';
+  popup.style.top = y + 'px';
+  
+  popup.style.display = 'block';
+}
 
+function hidePopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'none';
+}
+</script>
 
 <center>
   <input id="test" type="text" align="center" autofocus>
