@@ -111,7 +111,7 @@ function hidePopup() {
 function checkInput() {
   var inputValue = document.getElementById('test').value;
 
-  if (inputValue === "steinwandplatte") {
+  if (inputValue === "steinwandplatte" || inputValue === "steinplattewand" || inputValue === "wandsteinplatte" || inputValue === "wandplattestein" || inputValue === "plattesteinwand" || inputValue === "plattewandstein") {
     window.location.href = 'RallyeEnde.html';
   } else {
     alert("Falsch, versuche es noch einmal!");
