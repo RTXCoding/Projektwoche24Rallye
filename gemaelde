@@ -68,7 +68,7 @@ img {
 </div>
     <p></p>
        <center>
- <img src="kellerAI.jpg" align="center" width="500" height="600">  
+ <img src="boot.jpg" align="center" width="500" height="600">  
         </center>  
 
 <center>
@@ -80,7 +80,7 @@ img {
 function checkInput() {
   var inputValue = document.getElementById('test').value;
 
-  if (inputValue === "Brandschutztür") {
+  if (inputValue === "Osterbek") {
     window.location.href = 'RallyeEnde.html';
   } else {
     alert("Falsch, versuche es noch einmal!");
